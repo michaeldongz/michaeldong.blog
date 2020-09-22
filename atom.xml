@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://michaeldongz.github.io/michaeldong.blog</id>
     <title>michaeldongz的博客</title>
-    <updated>2020-09-22T06:52:17.627Z</updated>
+    <updated>2020-09-22T07:21:46.735Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://michaeldongz.github.io/michaeldong.blog"/>
     <link rel="self" href="https://michaeldongz.github.io/michaeldong.blog/atom.xml"/>
@@ -10,45 +10,6 @@
     <logo>https://michaeldongz.github.io/michaeldong.blog/images/avatar.png</logo>
     <icon>https://michaeldongz.github.io/michaeldong.blog/favicon.ico</icon>
     <rights>All rights reserved 2020, michaeldongz的博客</rights>
-    <entry>
-        <title type="html"><![CDATA[测试文章4]]></title>
-        <id>https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-4/</id>
-        <link href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-4/">
-        </link>
-        <updated>2020-09-22T05:07:31.000Z</updated>
-        <content type="html"><![CDATA[<p>测试文章4</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试文章3]]></title>
-        <id>https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-3/</id>
-        <link href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-3/">
-        </link>
-        <updated>2020-09-22T05:07:13.000Z</updated>
-        <content type="html"><![CDATA[<p>测试文章3</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试文章2]]></title>
-        <id>https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-2/</id>
-        <link href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-2/">
-        </link>
-        <updated>2020-09-22T05:06:50.000Z</updated>
-        <summary type="html"><![CDATA[<p>测试文章2</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>测试文章2</p>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[测试文章1]]></title>
-        <id>https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-1/</id>
-        <link href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-1/">
-        </link>
-        <updated>2020-09-22T05:05:30.000Z</updated>
-        <content type="html"><![CDATA[<p>测试文章1</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[创建Github图床]]></title>
         <id>https://michaeldongz.github.io/michaeldong.blog/post/di-yi-pian-wen-zhang/</id>

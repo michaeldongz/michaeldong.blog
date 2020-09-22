@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://michaeldongz.github.io</id>
+    <id>https://michaeldongz.github.io/michaeldong.blog</id>
     <title>Gridea</title>
-    <updated>2020-09-22T01:20:53.819Z</updated>
+    <updated>2020-09-22T01:24:03.982Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://michaeldongz.github.io"/>
-    <link rel="self" href="https://michaeldongz.github.io/atom.xml"/>
+    <link rel="alternate" href="https://michaeldongz.github.io/michaeldong.blog"/>
+    <link rel="self" href="https://michaeldongz.github.io/michaeldong.blog/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://michaeldongz.github.io/images/avatar.png</logo>
-    <icon>https://michaeldongz.github.io/favicon.ico</icon>
+    <logo>https://michaeldongz.github.io/michaeldong.blog/images/avatar.png</logo>
+    <icon>https://michaeldongz.github.io/michaeldong.blog/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[第一篇文章]]></title>
-        <id>https://michaeldongz.github.io/post/di-yi-pian-wen-zhang/</id>
-        <link href="https://michaeldongz.github.io/post/di-yi-pian-wen-zhang/">
+        <id>https://michaeldongz.github.io/michaeldong.blog/post/di-yi-pian-wen-zhang/</id>
+        <link href="https://michaeldongz.github.io/michaeldong.blog/post/di-yi-pian-wen-zhang/">
         </link>
         <updated>2020-09-22T01:17:46.000Z</updated>
         <content type="html"><![CDATA[<p>使用的GithubPages + Gridea 搭建的个人博客。要成功哦～</p>
@@ -21,8 +21,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://michaeldongz.github.io/post/hello-gridea/</id>
-        <link href="https://michaeldongz.github.io/post/hello-gridea/">
+        <id>https://michaeldongz.github.io/michaeldong.blog/post/hello-gridea/</id>
+        <link href="https://michaeldongz.github.io/michaeldong.blog/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>

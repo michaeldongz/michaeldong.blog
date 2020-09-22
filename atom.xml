@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://michaeldongz.github.io/michaeldong.blog</id>
     <title>michaeldongz的博客</title>
-    <updated>2020-09-22T03:21:43.053Z</updated>
+    <updated>2020-09-22T03:28:11.301Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://michaeldongz.github.io/michaeldong.blog"/>
     <link rel="self" href="https://michaeldongz.github.io/michaeldong.blog/atom.xml"/>
@@ -29,7 +29,7 @@
 </li>
 <li>
 <ol start="3">
-<li>下载PicGo,<a href="https://github.com/michaeldongz/ImageHosting/blob/master/img/Picgo%E9%85%8D%E7%BD%AEGithub%E5%9B%BE%E5%BA%8A.jpg?raw=true">配置</a>。成功后上传图片</li>
+<li>下载PicGo,<img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/Picgo%E9%85%8D%E7%BD%AEGithub%E5%9B%BE%E5%BA%8A.jpg?raw=true" alt="配置" loading="lazy">。成功后上传图片</li>
 </ol>
 </li>
 </ul>

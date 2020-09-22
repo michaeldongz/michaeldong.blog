@@ -1,8 +1,9 @@
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>测试文章4 | michaeldongz的博客</title>
+<title>我的阅读 | michaeldongz的博客</title>
 <meta name="description" content="The light at the end is worth the pain" />
 <link rel="shortcut icon" href="https://michaeldongz.github.io/michaeldong.blog/favicon.ico">
 <link rel="stylesheet" href="https://michaeldongz.github.io/michaeldong.blog/styles/main.css">
@@ -15,13 +16,13 @@
 <script src="https://michaeldongz.github.io/michaeldong.blog/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://michaeldongz.github.io/michaeldong.blog/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="测试文章4
-" />
-    <meta name="keywords" content="" />
-    <script src="https://michaeldongz.github.io/michaeldong.blog/media/js/waterfall.min.js"></script>
-    <script src="https://michaeldongz.github.io/michaeldong.blog/media/js/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.css">
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.js'></script>
   </head>
   <body>
+    <!-- start: #wrapper -->
+    <div class="wrapper">
+      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -88,70 +89,14 @@
         </div>
       </div>
 
-      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
-
-        <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true');">
-            <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-09-22"><i class="fa fa-calendar"></i><span class="lately">1 小时前</span></time>
-              
-            </div>
-            <div class="info">
-              <div class="tags ">
-                
-              </div>
-              <h1 class="title ularge white bold">测试文章4</h1>
-            </div>
-          </div>
-        </div>  
-
+      <main id="friends" class="main fullcover no-sidebar content">
+        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
         <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile">
-            <article class="main-article post">
-              <section class="post-content">
-                <div class="text">
-                  <p>测试文章4</p>
-
-                </div>
-                <div class="clear"></div>
-              </section>
-            </article>
-            <div class="clear"></div>
-
-            <section class="related section">
-              
-              
-              <article class="next grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true');"></div>
-                 <a href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-3/" class="full-link"></a>
-                 <div class="info">
-                  <time datetime="2020-09-22">2020-09-22</time>
-                  <h4 class="title white no-margin">测试文章3</h4>
-                </div>
-                 <span class="epcl-button red">
-                  <img src="https://michaeldongz.github.io/michaeldong.blog/media/images/right-arrow.svg" width="15" alt="Left Arrow">
-                </span>
-                <div class="overlay"></div>
-              </article>
-              
-
-                <div class="clear"></div>
-            </section>
-
-              <div class="clear"></div>
-              
-            
-              <div id="comments" class="bg-white hosted ">
-                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
-              </div>
-              <div class="clear"></div>
-            
-
-            </div>
-          </div>
+          <div class="section-content" style="margin-top:3em;"></div>
+        </div>
+        </div>
       </main>
-
-          <footer id="footer" class="grid-container">
+        <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -276,9 +221,15 @@
 
         
 
-      
-    <script src="https://michaeldongz.github.io/michaeldong.blog/media/js/functions-post.js"></script>
-
+    <script>
+    new Bmdb({
+      type: 'books',
+      selector: '.section-content',
+      secret: '',
+      noMoreText: '没有更多数据了',
+      limit: 30
+    })
+    </script>
     </div>
     <!-- end: #wrapper -->
   </body>

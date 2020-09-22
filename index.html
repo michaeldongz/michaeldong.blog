@@ -1,176 +1,365 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
 <head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
-<title>michaeldongz的博客</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://michaeldongz.github.io/michaeldong.blog/media/css/mdui.min.css">
-<link rel="stylesheet" href="https://michaeldongz.github.io/michaeldong.blog/media/css/modify.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://michaeldongz.github.io/michaeldong.blog/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <link rel="stylesheet" href="https://michaeldongz.github.io/michaeldong.blog/styles/main.css">
+    <meta name="description" content="The light at the end is worth the pain" />
+    <title>michaeldongz的博客</title>
 </head>
-<body id="index" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://michaeldongz.github.io/michaeldong.blog" class="mdui-typo-headline">michaeldongz的博客</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+
+
+<body>
+    <!-- 响应式布局，针对PC端内容显示 -->
+    <div id="content">
+        <div class="nav-large">
+            <div class="row">
+                
+        
+    </div>
+    
+    
+    </div>
+    <div id="bg">
+    </div>
+    <div id="bgchoice" style="display: none">
+    </div>
+            
+            <div id="bgurl" style="display:none"></div>
+             
+
+    <!-- 响应式布局，针对手机端内容显示 -->
+    <div class="nav-small">
+            <head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
+</head>
+<style>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width:768px){
+    .mbapspan{
+      padding: 0;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+          aria-expanded="false" id="barbutton">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://michaeldongz.github.io/michaeldong.blog">michaeldongz的博客&nbsp;&nbsp;|</a>
+        <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+            style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="barmenu">
+        <ul class="nav navbar-nav">
+          
+          
+          <li>
+            <a href="/michaeldong.blog">
+              首页
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/michaeldong.blog/archives">
+              归档
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/michaeldong.blog/tags">
+              标签
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/michaeldong.blog/post/about">
+              关于
+            </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+  var btstate = false;
+  var bt = $("#barbutton");
+  var bm = $("#barmenu");
+  bt.click(function(){
+    dropdown();
+  })
+  function dropdown(){
+    console.log(btstate);
+    //下拉
+    if(btstate==false){
+      bt.removeClass("collapsed");
+      bt.attr("aria-expanded","true");
+      bm.attr("aria-expanded","true")
+      bm.fadeIn(700);
+      btstate = true;
+    }
+    else{
+      bt.addClass("collapsed");
+      bt.attr("aria-expanded","false");
+      bm.removeClass("in");
+      bm.hide();
+      bm.attr("aria-expanded","false");
+      btstate = false;
+    }
+  }
+  </script> 
+</body>
+            <!-- 移动端欢迎页 -->
+<div class="welcome">
+    <div class="avatar-border">
+        <img src="https://michaeldongz.github.io/michaeldong.blog/images/avatar.png?v=1600754492139" class="avatar">
+    </div>
+    <span class="mobiledescribtion"></span>
+</div>
+
+    <div id="mobilebgurl" style="display:none"></div>
+
+<script>
+    var welcome = $('.welcome');
+    var bgurl = document.getElementById("mobilebgurl").innerHTML;
+    for (var i = 0; i < 3; i++)
+        bgurl = bgurl.replace("\\", "/");
+    welcome.css("background", "url('" + bgurl + "')");
+    var mobiledes = document.querySelector(".mobiledescribtion");
+    var text = "The light at the end is worth the pain";
+    // 当前显示第几个字
+    var mobilecharIndex = 1;
+    // 每个字显示间隔默认是500毫秒
+    var mobiledelta = 500;
+
+    // 记录动画执行开始时间
+    var mobilestart = null;
+    // 是否为删除动画
+    var mobileisDeleting = false;
+
+    // 动画回调函数
+    function mobileLoadDes(time) {
+        window.requestAnimationFrame(mobileLoadDes);
+        // 初始化开始时间
+        if (!mobilestart) start = time;
+        // 获取时间间隔
+        var mobileprogress = time - mobilestart;
+        // 每隔一定的时间，打印出一个新的字符
+        if (mobileprogress > mobiledelta) {
+            // 如果是打字效果
+            if (!mobileisDeleting) {
+                // 给展示文字的span新增一个字符，使用innerHTML来替换，charIndex自增1，然后返回新的字符串子串
+                mobiledes.innerHTML = "&nbsp;" + text.slice(
+                    0,
+                    ++mobilecharIndex
+                );
+                mobiledelta = 500 - Math.random() * 400;
+            } else {
+                // 如果是删除效果，则把文字一个一个减掉
+                mobiledes.innerHTML = "&nbsp;" + text.slice(
+                    0,
+                    mobilecharIndex--
+                );
+            }
+            // 把star更新为当前时间，进行下一个周期
+            mobilestart = time;
+
+            // 如果文字已经全部打印完毕
+            if (mobilecharIndex === text.length) {
+                // 下次开始删除文字
+                mobileisDeleting = true;
+                // 删除文字的间隔为200毫秒
+                mobiledelta = 100;
+                // 额外等待1.2秒后再删除
+                mobilestart = time + 1000;
+            }
+
+            // 如果文字删除完毕
+            if (mobilecharIndex < 0) {
+                mobileisDeleting = false;
+                // 额外增加200毫秒延迟
+                mobilestart = time + 200;
+            }
+        }
+    }
+
+    window.requestAnimationFrame(mobileLoadDes);
+</script>
+            <link rel="stylesheet" href="https://michaeldongz.github.io/michaeldong.blog/media/css/font-awesome.css">
+<div id="post-container">
+    
+    <div class="postshow postlist">
+        
+        <div id="post" style="width:100%">
+            <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" class="postimage"
+                onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-4/';return false">
+            <div class="posttitlebox">
+                <div class="posttitle" onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-4/';return false">
+                    测试文章4
+                </div>
+            </div>
+        </div>
+        <div class="postinfo">
+            <div class="postdate"><i class="fa fa-calendar"></i>2020-09-22</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+            <div class="posttag">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="postshow postlist">
+        
+        <div id="post" style="width:100%">
+            <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" class="postimage"
+                onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-3/';return false">
+            <div class="posttitlebox">
+                <div class="posttitle" onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-3/';return false">
+                    测试文章3
+                </div>
+            </div>
+        </div>
+        <div class="postinfo">
+            <div class="postdate"><i class="fa fa-calendar"></i>2020-09-22</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+            <div class="posttag">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="postshow postlist">
+        
+        <div id="post" style="width:100%">
+            <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" class="postimage"
+                onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-2/';return false">
+            <div class="posttitlebox">
+                <div class="posttitle" onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-2/';return false">
+                    测试文章2
+                </div>
+            </div>
+        </div>
+        <div class="postinfo">
+            <div class="postdate"><i class="fa fa-calendar"></i>2020-09-22</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+            <div class="posttag">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="postshow postlist">
+        
+        <div id="post" style="width:100%">
+            <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" class="postimage"
+                onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-1/';return false">
+            <div class="posttitlebox">
+                <div class="posttitle" onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-1/';return false">
+                    测试文章1
+                </div>
+            </div>
+        </div>
+        <div class="postinfo">
+            <div class="postdate"><i class="fa fa-calendar"></i>2020-09-22</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+            <div class="posttag">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="postshow postlist">
+        
+        <div id="post" style="width:100%">
+            <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" class="postimage"
+                onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/di-yi-pian-wen-zhang/';return false">
+            <div class="posttitlebox">
+                <div class="posttitle" onclick="window.location.href= 'https://michaeldongz.github.io/michaeldong.blog/post/di-yi-pian-wen-zhang/';return false">
+                    创建Github图床
+                </div>
+            </div>
+        </div>
+        <div class="postinfo">
+            <div class="postdate"><i class="fa fa-calendar"></i>2020-09-22</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+            <div class="posttag">
+                
+                <a href="https://michaeldongz.github.io/michaeldong.blog/tag/TIxalbnjz/" class="postlink">
+                    <i class="fa fa-tag"></i> Gridea
+                </a>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+            <div class="pagination-container">
+                  
+                
+            </div>
+        </div>
+
+        <div id="landlord">
+            <div class="message" style="opacity:0"></div>
+            <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
         </div>
     </div>
-</header>
-
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="/michaeldong.blog" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
-        <a href="/michaeldong.blog/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
-        <a href="/michaeldong.blog/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
-        <a href="/michaeldong.blog/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
-        
-        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
-    </ul>
-</nav>
-
-
-<main class="mdui-m-a-2 mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-xl-4 mdui-typo mdui-m-t-2">
-    
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-media">
-                <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" onerror="this.src='https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true';">
-                
-            </div>
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-4/">测试文章4</a></div>
-                <div class="mdui-card-primary-subtitle">2020-09-22</div>
-            </div>
-            <div class="mdui-card-content">测试文章4
-</div>
-        </div>
-    </section>
-
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-media">
-                <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" onerror="this.src='https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true';">
-                
-            </div>
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-3/">测试文章3</a></div>
-                <div class="mdui-card-primary-subtitle">2020-09-22</div>
-            </div>
-            <div class="mdui-card-content">测试文章3
-</div>
-        </div>
-    </section>
-
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-media">
-                <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" onerror="this.src='https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true';">
-                
-            </div>
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-2/">测试文章2</a></div>
-                <div class="mdui-card-primary-subtitle">2020-09-22</div>
-            </div>
-            <div class="mdui-card-content">测试文章2
-
-</div>
-        </div>
-    </section>
-
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-media">
-                <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" onerror="this.src='https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true';">
-                
-            </div>
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://michaeldongz.github.io/michaeldong.blog/post/ce-shi-wen-zhang-1/">测试文章1</a></div>
-                <div class="mdui-card-primary-subtitle">2020-09-22</div>
-            </div>
-            <div class="mdui-card-content">测试文章1
-</div>
-        </div>
-    </section>
-
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-media">
-                <img src="https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true" onerror="this.src='https://github.com/michaeldongz/ImageHosting/blob/master/img/%E6%89%AC%E5%B8%86%E8%B5%B7%E8%88%AA.jpg?raw=true';">
-                
-            </div>
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://michaeldongz.github.io/michaeldong.blog/post/di-yi-pian-wen-zhang/">创建Github图床</a></div>
-                <div class="mdui-card-primary-subtitle">2020-09-22</div>
-            </div>
-            <div class="mdui-card-content">
-
-
-Github中新建项目，一定要public
-
-
-
-
-生成token
-
-
-
-
-下载PicGo,。成功后上传图片
-
-
-
-...</div>
-        </div>
-    </section>
-
-</main>
-
-<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
-    
-    
-</nav>
-
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    Powered by <a href="https://github.com/michaeldongz" target="_blank">michaeldongz</a>
-</div>
-
-<script src="https://michaeldongz.github.io/michaeldong.blog/media/js/jquery.min.js"></script>
-<script src="https://michaeldongz.github.io/michaeldong.blog/media/js/mdui.min.js"></script>
-<script src="https://michaeldongz.github.io/michaeldong.blog/media/js/modify.js"></script>
-<script src="https://michaeldongz.github.io/michaeldong.blog/media/js/masonry.pkgd.min.js"></script>
-<script src="https://michaeldongz.github.io/michaeldong.blog/media/js/imagesloaded.pkgd.min.js"></script>
-<script>
-// 初始化-文章列表页面瀑布流。
-function masonry() {
-    // 初始化 masonry
-    $('.mdui-row-xs-1').masonry({
-        itemSelector: '.mdui-col',
-        horizontalOrder: true
-    });
-}
-masonry()
-$('.mdui-col').imagesLoaded( function() {
-    masonry()
-});
-</script>
-
+    <div id="domainname" style="display:none">https://michaeldongz.github.io/michaeldong.blog</div>
 </body>
+
 </html>
+
+
+<script>
+        var bgchoice=$('#bgchoice').html();
+        var bg = $('#bg');
+        var bgurl = document.getElementById("bgurl").innerHTML;
+        if(bgchoice=='default')
+            for (var i = 0; i < 3; i++)
+                bgurl = bgurl.replace("\\", "/");
+        bg.css("background", "url('" + bgurl + "')");
+
+        window.onload = function(){
+            aplayerbtnInit();
+        }
+</script>
